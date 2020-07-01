@@ -1,0 +1,69 @@
+
+
+/*ini adalah style jumbotron*/
+.jumbotron {
+	background-image: url(img/slider1.jpg);
+	background-size: cover;
+	height: 770px; 
+	text-align: center;
+	margin-top: -120px; 
+
+}
+.jumbotron .display-4 {
+	color: black;
+	margin-top: 260px;
+	font-family: Techno;
+
+}
+.jumbotron p {
+	color: black; 
+	font-size: 25px; 
+	font-family: Comic Sans MS; 
+}
+.jumbotron hr {
+	border-color: #F05F40;
+	width: 70px;
+	border-width: 3px; 
+}
+.jumbotron .btn{
+	background-color: #F05F40;
+	border: none;
+	border-radius: 25px; 
+	padding-right: 25px;
+	padding-left: 25px; 
+	margin-top: 40px;
+
+}
+
+/*ini adalah style slider*/
+.carousel-item {
+	height: 670px;
+}
+.carousel-item {
+	margin-top: -120px;
+}
+.carousel-item .display-4 {
+	margin-top: -440px;
+
+}
+.carousel-item hr {
+	border-color: #F05F40;
+	width: 70px;
+	border-width: 3px; 
+}
+.carousel-item .btn {
+	background-color: #F05F40;
+	border: none;
+	border-radius: 25px; 
+	padding-right: 25px;
+	padding-left: 25px; 
+	margin-top: 40px;
+
+}
+.card-body-icon {
+  color: light;
+}
+.card-img-top{
+  height: 150px;
+  width: 250px; 
+}
