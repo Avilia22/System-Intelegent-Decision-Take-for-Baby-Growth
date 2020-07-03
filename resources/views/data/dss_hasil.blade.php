@@ -9,7 +9,7 @@
   <div class="col-md-10 p-5 pt-2">
   <h3><i class="fas fa-weight mr-3"></i>DSS HASIL</h3><hr>
 
-  <a href="{{ url('form/form_dss_keanggotaan')}}" class="btn btn-primary mb-3"><i class="fas fa-plus-circle mr-2"></i>TAMBAH DSS HASIL</a>
+  <a href="{{ url('form/form_dss_hasil')}}" class="btn btn-primary mb-3"><i class="fas fa-plus-circle mr-2"></i>TAMBAH DSS HASIL</a>
   <br>
   <table class="table table-striped table-bordered">
   <thead>
@@ -36,7 +36,7 @@
       <td>{{ $h->id_variabel }}</td>
       <td>{{ $h->id_keanggotaan }}</td>
       <td>{{ $h->alpha }}</td>
-      <td><a href="/form/edit_dss_keanggotaan/{{ $h->id }}" class="btn btn-primary">Edit</a></td>
+      <td><a href="/form/edit_dss_hasil/{{ $h->id }}" class="btn btn-primary">Edit</a></td>
       <td><a href="/data/dss_hasil/hapus_dss_hasil/{{ $h->id }}" class="btn btn-primary">Hapus</a></i></td>
     </tr>
     @endforeach

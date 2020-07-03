@@ -23,6 +23,7 @@ class DSSHasilController extends Controller
     {
         DB::table('dss_hasil')->insert([
             'id' => $request->id,
+            'id_pemeriksaan' => $request->id_pemeriksaan,
             'id_variabel' => $request->id_variabel,
             'id_keanggotaan' => $request->id_keanggotaan,
             'alpha' => $request->alpha
@@ -43,6 +44,7 @@ class DSSHasilController extends Controller
     {
         DB::table('dss_hasil')->where('id',$request->id)->update([
             'id' => $request->id,
+            'id_pemeriksaan' => $request->id_pemeriksaan,
             'id_variabel' => $request->id_variabel,
             'id_keanggotaan' => $request->id_keanggotaan,
             'alpha' => $request->alpha

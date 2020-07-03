@@ -73,7 +73,7 @@ Route::get('/form/form_dss_hasil','DSSHasilController@tambah');
 Route::post('/data/dss_hasil/store','DSSHasilController@store');
 Route::get('/form/edit_dss_hasil/{id}','DSSHasilController@edit');
 Route::post('/data/dss_hasil/update','DSSHasilController@update');
-Route::get('/data/dss_hasil/hapus_dss_dss_hasil/{id}','DSSHasilController@hapus');
+Route::get('/data/dss_hasil/hapus_dss_hasil/{id}','DSSHasilController@hapus');
 
 Route::get('/data/dss_keanggotaan', 'DSSKeanggotaanController@index');
 Route::get('/form/form_dss_keanggotaan','DSSKeanggotaanController@tambah');
