@@ -44,7 +44,7 @@
        <h1 class="display-4">FIND YOUR CHILD'S <br> <span class="font-weight-bold">NUTRITIONAL NEEDS</span></h1>
         <hr class="my-4">
         <p class="lead">Mari jadikan prinsip gizi seimbang untuk tumbuh kembang balita</p>
-        <a class="btn btn-primary btn-lg font-weight-bold" href="{{ url('/index') }}" role="button">LOGIN</a>
+        <a class="btn btn-primary btn-lg font-weight-bold" href="{{ url('/login')}}" role="button">LOGIN</a>
     </div>
     </div>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

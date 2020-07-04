@@ -17,12 +17,43 @@
   <a class="navbar-brand" href="#">SELAMAT DATANG ADMIN |<b>POSYANDU MANGGA BIMO MARTANI</b></a>
    <div class="icon class ml-4">
       <h5>
-      <i class="fas fa-sign-out-alt mr-3"data-toggle="tooltip" title="Sign Out"></i>
+                        <!-- Authentication Links -->
+                        @guest
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
+                    </ul>
+                    </div>
+            </div>
+        </nav>
       </h5>
     </div>
   </div>
 
-</nav>
 <div class="row no-gutters mt-5">
   <div class="col-md-2 bg-dark mt-2 pf-3 pt-4">
       <ul class="nav flex-column ml-3 mb-5">
